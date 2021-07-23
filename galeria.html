@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Accordeon</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-galeria{
+            display: flex;
+            height: 100vh;
+        }
+
+        .image{
+            flex-basis: 10vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 560ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .image:hover{
+            flex-basis: 70vw;
+        }
+
+        .img1{
+            background-image: url(images/img1.jpg);
+        }
+
+        .img2{
+            background-image: url(images/img2.jpg);
+        }
+
+        .img3{
+            background-image: url(images/img3.jpg);
+        }
+
+     
+        
+    </style>
+</head>
+<body>
+  
+    <div class="container-galeria">
+        <div class="image img1"></div>
+        <div class="image img2"></div>
+        <div class="image img3"></div>
+    </div>
+
+
+</body>
+</html>
